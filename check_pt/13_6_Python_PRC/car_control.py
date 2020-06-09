@@ -24,10 +24,10 @@ def get():
 
         if k3=='A':
             print ("up")
-            s.write("/goStraight/run 100 \n".encode())
+            s.write("/goStraightCalib/run 10 \n".encode())
         if k3=='B':
             print ("down")
-            s.write("/goStraight/run -100 \n".encode())
+            s.write("/goStraightCalib/run -10 \n".encode())
         if k3=='C':
             print ("right")
             s.write("/turn/run 100 -0.3 \n".encode())
