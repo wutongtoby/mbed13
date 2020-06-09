@@ -60,9 +60,11 @@ int main(){
 
     while(1) {
         wait(1);
+        // read one character and save it in "rotation"
         for(int i = 0; i < 1; i++) {
             rotation = pc.putc(pc.getc());
         }
+        // read two characters and save them in "buff[]""
         for(int i = 0; i < 2; i++) {
             buff[i] = pc.putc(pc.getc());
         }

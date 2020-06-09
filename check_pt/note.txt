@@ -1,0 +1,7 @@
+so in this check point, we only need to add one RPC function, that is,
+    void RPC_goStraightCalib(Arguments *in, Reply *out) {
+        int speed = in->getArg<double>();
+        car.goStraightCalib(speed);
+        return;
+    }
+in the bbcar_rpc.cpp, and bbcar_rpc.h

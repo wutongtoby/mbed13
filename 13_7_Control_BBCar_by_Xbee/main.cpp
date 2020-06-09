@@ -7,6 +7,7 @@ PwmOut pin9(D9), pin8(D8);
 Serial xbee(D12, D11);
 BBCar car(pin8, pin9, servo_ticker);
 
+// just wait for rpc call from the xbee!
 int main(void) 
 {
     char buf[256], outbuf[256];
