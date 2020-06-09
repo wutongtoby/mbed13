@@ -1,87 +1,87 @@
 [
     {
-        "module": "../..",
         "size": {
             ".text-delta": 0,
-            ".data-delta": 0,
             ".data": 473,
-            ".bss": 6610,
+            ".bss-delta": 0,
             ".text": 30312,
-            ".bss-delta": 0
-        }
+            ".data-delta": 0,
+            ".bss": 6610
+        },
+        "module": "../.."
     },
     {
-        "module": "BUILD/K66F",
         "size": {
-            ".text-delta": 0,
-            ".data-delta": 0,
+            ".text-delta": -20,
             ".data": 0,
-            ".bss": 600,
-            ".text": 1412,
-            ".bss-delta": 0
-        }
+            ".bss-delta": 0,
+            ".text": 1392,
+            ".data-delta": 0,
+            ".bss": 600
+        },
+        "module": "BUILD/K66F"
     },
     {
-        "module": "[fill]",
         "size": {
-            ".text-delta": 0,
-            ".data-delta": 0,
+            ".text-delta": -4,
             ".data": 11,
-            ".bss": 33,
-            ".text": 146,
-            ".bss-delta": 0
-        }
+            ".bss-delta": 0,
+            ".text": 142,
+            ".data-delta": 0,
+            ".bss": 33
+        },
+        "module": "[fill]"
     },
     {
-        "module": "[lib]/c.a",
         "size": {
             ".text-delta": 0,
-            ".data-delta": 0,
             ".data": 2472,
-            ".bss": 89,
+            ".bss-delta": 0,
             ".text": 31934,
-            ".bss-delta": 0
-        }
+            ".data-delta": 0,
+            ".bss": 89
+        },
+        "module": "[lib]/c.a"
     },
     {
-        "module": "[lib]/gcc.a",
         "size": {
             ".text-delta": 0,
-            ".data-delta": 0,
             ".data": 0,
-            ".bss": 0,
+            ".bss-delta": 0,
             ".text": 3336,
-            ".bss-delta": 0
-        }
+            ".data-delta": 0,
+            ".bss": 0
+        },
+        "module": "[lib]/gcc.a"
     },
     {
-        "module": "[lib]/misc",
         "size": {
             ".text-delta": 0,
-            ".data-delta": 0,
             ".data": 4,
-            ".bss": 28,
+            ".bss-delta": 0,
             ".text": 180,
-            ".bss-delta": 0
-        }
+            ".data-delta": 0,
+            ".bss": 28
+        },
+        "module": "[lib]/misc"
     },
     {
-        "module": "[lib]/nosys.a",
         "size": {
             ".text-delta": 0,
-            ".data-delta": 0,
             ".data": 0,
-            ".bss": 0,
+            ".bss-delta": 0,
             ".text": 32,
-            ".bss-delta": 0
-        }
+            ".data-delta": 0,
+            ".bss": 0
+        },
+        "module": "[lib]/nosys.a"
     },
     {
         "summary": {
             "static_ram_delta": 0,
-            "total_flash": 70312,
-            "total_flash_delta": 0,
-            "static_ram": 10320
+            "total_flash": 70288,
+            "static_ram": 10320,
+            "total_flash_delta": -24
         }
     }
 ]
