@@ -3,9 +3,9 @@
         "module": "../..",
         "size": {
             ".text-delta": 0,
-            ".text": 34029,
             ".bss-delta": 0,
             ".bss": 6722,
+            ".text": 34029,
             ".data-delta": 0,
             ".data": 473
         }
@@ -13,10 +13,10 @@
     {
         "module": "BUILD/K66F",
         "size": {
-            ".text-delta": 20,
-            ".text": 2882,
-            ".bss-delta": 0,
-            ".bss": 852,
+            ".text-delta": -32,
+            ".bss-delta": -8,
+            ".bss": 980,
+            ".text": 2930,
             ".data-delta": 0,
             ".data": 16
         }
@@ -24,10 +24,10 @@
     {
         "module": "[fill]",
         "size": {
-            ".text-delta": 4,
-            ".text": 215,
+            ".text-delta": 0,
             ".bss-delta": 0,
             ".bss": 29,
+            ".text": 215,
             ".data-delta": 0,
             ".data": 11
         }
@@ -36,9 +36,9 @@
         "module": "[lib]/c.a",
         "size": {
             ".text-delta": 0,
-            ".text": 42224,
             ".bss-delta": 0,
             ".bss": 89,
+            ".text": 42224,
             ".data-delta": 0,
             ".data": 2472
         }
@@ -47,9 +47,9 @@
         "module": "[lib]/gcc.a",
         "size": {
             ".text-delta": 0,
-            ".text": 3336,
             ".bss-delta": 0,
             ".bss": 0,
+            ".text": 3336,
             ".data-delta": 0,
             ".data": 0
         }
@@ -58,9 +58,9 @@
         "module": "[lib]/misc",
         "size": {
             ".text-delta": 0,
-            ".text": 180,
             ".bss-delta": 0,
             ".bss": 28,
+            ".text": 180,
             ".data-delta": 0,
             ".data": 4
         }
@@ -69,19 +69,19 @@
         "module": "[lib]/nosys.a",
         "size": {
             ".text-delta": 0,
-            ".text": 32,
             ".bss-delta": 0,
             ".bss": 0,
+            ".text": 32,
             ".data-delta": 0,
             ".data": 0
         }
     },
     {
         "summary": {
-            "total_flash_delta": 24,
-            "static_ram": 10696,
-            "total_flash": 85874,
-            "static_ram_delta": 0
+            "static_ram": 10824,
+            "total_flash": 85922,
+            "static_ram_delta": -8,
+            "total_flash_delta": -32
         }
     }
 ]

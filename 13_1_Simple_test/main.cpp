@@ -2,7 +2,7 @@
 #include "bbcar.h"
 
 Ticker servo_ticker;
-PwmOut pin9(D9), pin8(D8);
+PwmOut pin9(D9), pin8(D9);
 BBCar car(pin8, pin9, servo_ticker);
 
 int main(void) 

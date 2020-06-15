@@ -3,20 +3,25 @@
 #include "bbcar_rpc.h"
 
 Ticker servo_ticker;
-PwmOut pin9(D9), pin8(D8);
-Serial xbee(D12, D11);
-BBCar car(pin8, pin9, servo_ticker);
+PwmOut pin13(D13), pin10(D10);
+Serial xbee(D1, D0); // Tx, Rx
+BBCar car(pin13, pin10, servo_ticker);
+Ticker encoder_ticker1;
+Ticker encoder_ticker2;
+
+//DigitalIn pin3(D3);
+//DigitalIn pin4(D4);
 
 // just wait for rpc call from the xbee!
 int main(void) 
 {
-    // for D8
-    double pwm_table0[] = {-50, -40, -30, -20, -10, 0, 10, 20, 30, 40, 50};
-    double speed_table0[] = {-25.440, -20.974, -15.551, -10.288, -4.785, 0, 0.799, 5.742, 11.484, 16.189, 20.177};
     
-    // for D9
+    // for D13 
+    double pwm_table0[] = {-50, -40, -30, -20, -10, 0, 10, 20, 30, 40, 50};
+    double speed_table0[] = {-20.177, -16.189, -11.484, -5.742, -0.799, 0, 4.785, 10.288, 15.551, 20.974, 25.440};     
+    // for D10
     double pwm_table1[] = {-150, -120, -90, -60, -30, 0, 30, 60, 90, 120, 150};
-    double speed_table1[] = {-16.747, -16.349, -12.392, -12.521, -6.539, 0, 5.184, 11.404, 14.193, 16.269, 16.747};
+    double speed_table1[] = {-16.928, -15.950, -15.072, -12.281, -6.061, 0, 5.822, 11.723, 14.913, 16.02, 16.428};
 
     // first and fourth argument : length of table
     car.setCalibTable(11, pwm_table0, speed_table0, 11, pwm_table1, speed_table1);
